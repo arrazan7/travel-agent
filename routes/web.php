@@ -24,7 +24,7 @@ Route::get('/register', [LandingPageController::class, 'register'])->name('regis
 Route::get('/pilih-paket', [PaketController::class, 'pilihPaket'])->name('pilih-paket');
 Route::get('/paket', [PaketController::class, 'paket'])->name('paket');
 Route::get('/detail-paket', [PaketController::class, 'detailPaket'])->name('detail-paket');
-Route::get('data-diri', [PaketController::class, 'dataDiri'])->name('data-diri');
+Route::get('/data-diri', [PaketController::class, 'dataDiri'])->name('data-diri'); // Tanda dari Fayy, apakah tampil di project mu??
 Route::get('/konfirmasi', [PaketController::class, 'konfirmasi'])->name('konfirmasi');
 Route::get('/bukti-pembayaran', [PaketController::class, 'buktiPembayaran'])->name('bukti-pembayaran');
 Route::get('/custom-paket', [PaketController::class, 'customPaket'])->name('custom-paket');
